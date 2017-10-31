@@ -8,8 +8,7 @@ export class PostService {
 url = 'https://jsonplaceholder.typicode.com/posts/1';
 
 constructor(private httpClient: HttpClient) { }
-
-
+//
 getPosts(): Observable<{}> {
   return this.httpClient.get(this.url).pluck('body');
 }
